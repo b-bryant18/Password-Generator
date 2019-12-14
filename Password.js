@@ -35,8 +35,12 @@ if (passLength < 8 || passLength > 128) {
 }
 
 if (passLength < 8 || passlength > 128) {
-    location.reload();
+   passlength = prompt("Password must be between 8 & 128 characters");
 }
+
+if (passLength < 8 || passlength > 128) {
+   location.reload();
+ }
 
 else {
 
@@ -52,7 +56,11 @@ else {
 
         var charList = "";
 
-        if (specChars) {
+        if (numbers) {
+            charList = charList + "!@#$%^&*()-_=+~";
+        }
+
+        if (numbers) {
             charList = charList + "1234567890";
         }
 
