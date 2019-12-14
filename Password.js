@@ -1,6 +1,6 @@
 var passLength =
     prompt("Specify password length: 8-128 characters.");
-if (passLength < 8 || passLength > 128) {
+if (passLength < 8 || passlength > 128) {
     passLength = prompt("Invalid password length: Must be 8-128 characters.");
 }
 

@@ -27,8 +27,10 @@ h2 {
 }
 
 body {
-    /* Put background color or image here */
-}
+        height: 750px;
+        background-color: aquamarine; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to bottom right, aquamarine, rgb(31, 61, 233)); /* Standard syntax (must be last) */
+      }
 
 #generate {
     background-color: aquamarine;
