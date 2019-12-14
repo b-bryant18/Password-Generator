@@ -1,33 +1,3 @@
-// function getPasswordOptions() {
-//     var length = parseInt(prompt("Specify password length. 8-128 chracters"));
-//     if (isNan(length) === true) {
-//         alert("Password length must be specified as a number");
-
-//     }
-//     if (length < 8) {
-//         alert("Password length must be at least 8 characters");
-
-//     }
-//     if (length > 128) {
-//         alert("Password length cannot be greater than 128 characters");
-
-//     }
-//     var specChars = confirm("Click ok if you want to include special characters");
-//     var numbers = confirm("Click ok to include numbers");
-//     var upperCase = confirm("Click ok to include uppercase letters");
-//     var lowerCase = confirm("Click ok to include lowercase letters");
-//     if (
-//         specChars === false &&
-//         numbers === false &&
-//         upperCase === false &&
-//         lowerCase === false
-//     ) {
-//         alert("Select at least one character type")
-
-//     }
-// }
-//  getPasswordOptions();
-
 var passLength =
     prompt("Specify password length: 8-128 characters.");
 if (passLength < 8 || passLength > 128) {
@@ -65,7 +35,7 @@ else {
         }
 
         if (upperCase) {
-            charList = charList + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            charList = charList + "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         }
 
         if (lowerCase) {
@@ -81,8 +51,16 @@ else {
         var pass = "";
 
         for (var i = 0; i < passLength; i++) {
-            pass += charList[Math.floor(Math.random() * charList.Length)];
+            pass += charList[Math.floor(Math.random() * charList.length)];
         }
         document.getElementById('passwordBox').value = pass;
+    }
+
+    function copyPassword () {
+        var copyText = document.getElementById("passwordBox");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+
     }
 }
