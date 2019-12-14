@@ -1,0 +1,59 @@
+.jumbotron {
+    max-width: 960px; 
+    /* 100%percent? */
+    margin: 0 auto;
+    border: 2px solid hsla(197, 86%, 46%, 0.953);
+    /* Gradient borders would be cool*/
+    border-bottom: none;
+}
+
+.display-4 {
+    font-size: 40px;
+    font-size: 4.5vw;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#passwordBox {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 25px;
+    background-color: grey;
+    border: 2px solid white;
+    border-top: none;
+}
+
+body {
+    /* Put background color or image here */
+}
+
+#generate {
+    background-color: aquamarine;
+    box-shadow: none;
+    border: none;
+    padding: 5px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#copy {
+    box-shadow:none;
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin: 10% 5% 10% 5%;
+}
+
+::selection {
+    background-color: darkorange;
+}
+    ::moz-selection {
+        background-color: white;
+    }
+
