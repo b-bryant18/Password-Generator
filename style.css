@@ -21,19 +21,19 @@ h2 {
     max-width: 960px;
     margin: 0 auto;
     padding-top: 25px;
-    background-color: grey;
+    background-color: aqua;
     border: 2px solid white;
     border-top: none;
 }
 
 body {
-        height: 750px;
+        height: 800px;
         background-color: aquamarine; /* For browsers that do not support gradients */
         background-image: linear-gradient(to bottom right, aquamarine, rgb(31, 61, 233)); /* Standard syntax (must be last) */
       }
 
 #generate {
-    background-color: aquamarine;
+    background-color: yellow;
     box-shadow: none;
     border: none;
     padding: 5px;
